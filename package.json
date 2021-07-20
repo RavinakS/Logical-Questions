@@ -1,0 +1,22 @@
+{
+  "name": "logical-questions",
+  "version": "1.0.0",
+  "description": "This folder is all about logical(alzebra kind of) problem solving.",
+  "main": "callbackEx.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RavinakS/Logical-Questions.git"
+  },
+  "author": "Ravina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RavinakS/Logical-Questions/issues"
+  },
+  "homepage": "https://github.com/RavinakS/Logical-Questions#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
