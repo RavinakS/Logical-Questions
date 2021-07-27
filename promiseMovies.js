@@ -1,3 +1,5 @@
+// How does promises works in asyncronous way?
+
 const axios = require('axios');
 const fs = require('fs').promises //.promises - Node.js includes a promised-based version of the callback-based fs library
 
