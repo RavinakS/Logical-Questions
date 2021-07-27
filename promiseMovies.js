@@ -20,6 +20,8 @@ getApi.then(
             movieList.push(`${count++}. ${aMovie['title']} (${aMovie['release_date']})`);
         })
 
+        // console.log(movieList);
+        // console.log(fs.writeFile('promiseMovies.csv', movieList));
         return fs.writeFile('promiseMovies.csv', movieList);
 
 }).then(()=> {
@@ -28,6 +30,7 @@ getApi.then(
 
 }).catch((error)=>{
 
+    console.log('');
     console.log(`couldn't save the movie list to the file: ${error}`);
     console.log('');
 
@@ -35,4 +38,14 @@ getApi.then(
 
 // If any promise is not fulfilled in the chain of promises, JavaScript automatically goes to the catch() function if it was defined. 
 // That’s why we only have one catch() clause even though we have two asynchronous operations.
+
+// So this is what means that Promisses works asyncronaslly as well
+
+// corrected code 
+/*
+change line number 25 with bellow line of code
+
+return fs.writeFile('promiseMovies.csv', movieList.toString());
+
+*/
 
