@@ -11,5 +11,5 @@ function timeConversion(s) {
         }
     }
 }
-s = "07:05:45PM"
+s = "10:05:45PM"
 timeConversion(s);
