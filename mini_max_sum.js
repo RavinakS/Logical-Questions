@@ -5,7 +5,7 @@ function miniMaxSum(arr) {
     var max;
     var mini_num;
     [7, 69, 2, 221, 8974]
-    // shorting
+    // shorting "Selection Short"
     for(count; count<arr.length; count++){
         mini = count+1;
         mini_num_index = count;
@@ -14,8 +14,9 @@ function miniMaxSum(arr) {
                 mini_num_index = mini;
             }
         };
-        arr[count] = arr[mini_num_index];
+        mini_num = arr[mini_num_index];
         arr[mini_num_index] = arr[count];
+        arr[count] = mini_num;
         console.log(arr);
     }
     
