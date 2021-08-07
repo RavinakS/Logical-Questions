@@ -4,40 +4,22 @@ function countApplesAndOranges(s, t, a, b, apples, oranges) {
     let fruit_a;
     let fruit_b;
     let count;
-    if(apples.length>oranges.length){
-        count = 0;
-        for(count; count<apples.length; count++){
-            fruit_a = a + apples[count];
-            if(fruit_a>=s && fruit_a<=t){
-                total_apples = total_apples + 1;
-            }
-            if(count<oranges.length){
-                fruit_b = b + oranges[count];
-                if(fruit_b>=s && fruit_b<=t){
-                    total_orranges = total_orranges + 1;
-                }
-            }
+    count = 0;
+    for(count; count<apples.length; count++){
+        fruit_a = a + apples[count];
+        if(fruit_a>=s && fruit_a<=t){
+            total_apples = total_apples + 1;
         }
-        console.log(total_apples);
-        console.log(total_orranges);
-    }else if(oranges.length>=apples.length){
-        count = 0;
-        for(count; count<apples.length; count++){
-            fruit_b = b + oranges[count];
-            if(fruit_b>=s && fruit_b<=t){
-                total_orranges = total_orranges + 1;
-            }
-            if(count<apples.length){
-                fruit_a = a + apples[count];
-                if(fruit_a>=s && fruit_a<=t){
-                    total_apples = total_apples + 1;
-                }
-            }
-        }
-        console.log(total_apples);
-        console.log(total_orranges);
     }
-
+    console.log(total_apples);
+    count = 0;
+    for(count; count<apples.length; count++){
+        fruit_b = b + oranges[count];
+        if(fruit_b>=s && fruit_b<=t){
+            total_orranges = total_orranges + 1;
+        }
+    }
+    console.log(total_orranges);
 }
 
 const s = 7;
