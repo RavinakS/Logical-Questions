@@ -1,6 +1,7 @@
 function timeConversion(s) {
-    let hours = [0, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24];
+    let hours = [0, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24];
     let hour = parseInt(s[0]+s[1]);
+    console.log(hour);
     let time = s[s.length-2];
     if(time==="P"){
         if(hour===0){
