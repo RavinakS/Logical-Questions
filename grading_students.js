@@ -19,3 +19,4 @@ function gradingStudents(grades) {
 }
 
 const grades = [73, 67, 38, 33]
+console.log(gradingStudents(grades));
