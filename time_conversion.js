@@ -5,11 +5,11 @@ function timeConversion(s) {
     let time = s[s.length-2];
     if(time==="P"){
         if(hour===0){
-            console.log(`00:${s[3]}${s[4]}:${s[6]}${s[7]}`)
+            return (`00:${s[3]}${s[4]}:${s[6]}${s[7]}`)
         }else{
-            console.log(`${hours[hour]}:${s[3]}${s[4]}:${s[6]}${s[7]}`);
+            return (`${hours[hour]}:${s[3]}${s[4]}:${s[6]}${s[7]}`);
         }
     }
 }
 s = "10:05:45PM"
-timeConversion(s);
+console.log(timeConversion(s));
