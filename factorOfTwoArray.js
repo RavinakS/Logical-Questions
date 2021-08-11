@@ -14,7 +14,7 @@ function getTotalX(a, b) {
             j = 0;
             for(j; j<b.length; j++){
                 if(b[j] % i != 0){
-                    console.log(i);
+                    console.log(i, "hiii");
                     break;
                 }
             }
@@ -28,5 +28,5 @@ function getTotalX(a, b) {
 }
 
 const a = [2, 4];
-const b = [18, 32, 96];
-console.log(getTotalX(a, b));
+const b = [16, 32, 96];
+console.log(getTotalX(a, b), "-: total");
