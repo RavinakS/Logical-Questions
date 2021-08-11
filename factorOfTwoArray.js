@@ -23,18 +23,6 @@ function getTotalX(a, b) {
             console.log(i);
             count+=1;
         }
-        // if(j === a.length){
-        //     j = 0;
-        //     for(j; j<b.length; j++){
-        //         if(b[j] % i != 0){
-        //             break;
-        //         }
-        //     }
-        //     if(j===b.length){
-        //         console.log(i);
-        //         count+=1;
-        //     }
-        // }
     }
     return count;
 }
