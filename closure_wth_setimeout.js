@@ -1,10 +1,21 @@
-// this is what works
-for(let i = 1; i<=5; i++){
-    setTimeout(function (){console.log(i);}, i * 1000);
+// what if I want to print using var only then the form comes closure.
+// using closure
+function outer(){
+    for(let i = 1; i<=5; i++){
+        function inner(value){
+            setTimeout(function cb(){
+                console.log(value);
+            }, value*1000)
+        }
+        inner(i);
+    }
 }
+inner = outer();
 
-console.log("Ended");
-
+// this is what works
+// for(let i = 1; i<=5; i++){
+//     setTimeout(function (){console.log(i);}, i * 1000);
+// }
 
 // print 1 to 5 using setimeout and time according to the i.
 // var i = 1; // or assign with let, the same output is gonna get
@@ -13,13 +24,3 @@ console.log("Ended");
 // }
 
 // console.log("Ended");
-
-
-// function outer(){
-
-//     return setTimeout(function cb(){
-//         console.log("Hi");
-//     }, 3000)
-// }
-
-// inner = outer();
