@@ -52,12 +52,37 @@ function us(sp, w_kg){
     }
 }
 
+// currency 
+//US currency(dollar)
+// UK currency(Pound)
+
+function currency(inr){
+    user = readline.question('USD/ GBP/ INR:- ')
+    userInLowercase = user.toLowerCase()
+    if(inr===0){
+        return 0 + " INR"
+    }
+    else if(user === 'usd'){
+        usd = inr/80;
+        return usd + " USD";
+    }else if(user === 'gbp'){
+        gbp = inr/100;
+        return gbp + " GBP"
+    }else if(user==="inr"){
+        return inr + " INR"
+    }else{
+        return "Invalid Input";
+    }
+}
+
 let ccStr = country_code.toLowerCase();
 sp = isProductCodeValid(product_code);
 if(ccStr==='uk'){
-    console.log(uk(sp, weight_in_kg), 'INR');
+    inr = uk(sp, weight_in_kg);
+    console.log(currency(inr));
 }else if(ccStr === 'us'){
-    console.log(us(sp, weight_in_kg), 'INR');
+    inr = us(sp, weight_in_kg);
+    console.log(currency(inr));
 }else{
     console.log("Not Applicable!");
 }
