@@ -55,9 +55,9 @@ function us(sp, w_kg){
 let ccStr = country_code.toLowerCase();
 sp = isProductCodeValid(product_code);
 if(ccStr==='uk'){
-    console.log(uk(sp, weight_in_kg));
+    console.log(uk(sp, weight_in_kg), 'INR');
 }else if(ccStr === 'us'){
-    console.log(us(sp, weight_in_kg));
+    console.log(us(sp, weight_in_kg), 'INR');
 }else{
     console.log("Not Applicable!");
 }
